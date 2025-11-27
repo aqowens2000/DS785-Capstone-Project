@@ -1,2 +1,7 @@
 # DS785-Capstone-Project
 This project contains the input files and code to generate the results and analysis as part of the "Predicting the Market: Creating an Ideal Investment Portfolio using Data Analysis" for the DS785 course.
+
+Some additional notes on how to go through the code:
+
+1. The "capstone project Load SEC Data - Final.py" uses the SEC company tickers json file to query all of the required data for the project from Yahoo Finance. This code will take an extensive amount of time to run because of the nature of getting a significant number of online queries (~36 hours). Additionally, the datasets can change depending on when you query them (i.e. market data can change, ticker names change, etc.). In order to ensure we start with the same results for replication in this project, I have versions of the output files from my last queries in mid-september. The files that get produced are the "Current Stock Data.csv", "Historical Stock Prices.csv", and "Historical Stock Returns.csv" files. These files are then read-in to the next code file.
+2. The "capstone project analysis code - Final.py" contains the main analysis and cleaning that aligns with the DS785 Coursework. It reads in the 3 csv files listed above and does additional webscraping and cleaning. It will also contain any additional transformations, exploratory analysis, model-building, and final examinations to achieve the objectives of the project. The charts used for presentations will also come from this code. To run this code from start to finish, it takes about 10-15 minutes.
